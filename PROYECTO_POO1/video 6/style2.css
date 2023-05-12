@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cont{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "logo logo quien_soy  servicios"
+        "logo logo prod       contacto"
+    
+        ;
+}
+.logo{
+    background-color: rgb(242, 246, 9);
+    grid-area: logo;
+
+}
+.quien_soy{
+    background-color: rgb(19, 241, 241);
+    grid-area: quien_soy;
+}
+.servicios{
+    background-color: rgb(124, 198, 198);
+    grid-area: servicios;
+}
+.prod{
+    background-color: rgb(105, 194, 194);
+    grid-area: prod;
+}
+.contac{
+    background-color: rgb(60, 247, 8);
+    grid-area: contacto;
+
+}
+.cont div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:underline;
+}
+.cont :hover{
+    color: aliceblue;
+}
+@media screen and (max-width:768px) {
+    .cont{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "logo       logo "
+        "quien_soy  servicios"
+        "prod       contacto"
+    }
+}

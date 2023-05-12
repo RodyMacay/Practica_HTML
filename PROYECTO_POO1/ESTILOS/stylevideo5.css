@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,700;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.item{
+    list-style: none  ;
+    background-color: #8a2be2;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}              
+.items{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}  
+.items :hover{
+    color: black;
+}
+.item a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+.items.active a{
+    text-decoration:underline double;
+}
+main{
+    padding: 40px;
+}
+.cartita{
+    width: 28%;
+    padding: 10px;
+    background-color: rgb(202, 225, 188);
+    border-radius:10px ;
+    display:inline-block;
+    margin-inline:1.5%;
+    margin-block: 20px;
+    position: relative;
+    border: 2px dotted coral;
+}
+.cartita_wpp{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+}
+.cartita_img{
+    width: 100%;
+    padding: 10px;
+
+}
+.cartita_titulo{
+    font-size: 18px;
+}
+.cartita_parrafo{
+    font-size: 14px;
+}
+.boton{
+    background-color:#8a2be2 ;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.cartita_img,
+.cartita_parrafo,
+.cartita_titulo{
+    margin-bottom: 10px;
+}
+
+.wpp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}

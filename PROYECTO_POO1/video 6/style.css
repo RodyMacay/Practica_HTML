@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    border: solid saddlebrown;
+    display: grid;
+    width: 800px;
+    height: 400px;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    grid-template-areas: 
+        "caja1 caja2 caja3 caja5"
+        "caja4 caja4 caja4 caja5"
+        "caja6 caja6 caja6 caja6 ";
+}
+ .caja{
+    border: 1px solid rebeccapurple;
+ }
+
+ .caja1{
+    grid-area: caja1;
+ }
+ .caj2{
+    grid-area: caja2;
+ }
+ .caja3{
+    grid-area: caja3;
+ }
+ .caja4{
+    grid-area: caja4;
+ }
+ .caja5{
+    grid-area: caja5;
+ }
+ .caja6{
+    grid-area: caja6;
+ }

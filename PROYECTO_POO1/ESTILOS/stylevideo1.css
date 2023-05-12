@@ -1,0 +1,15 @@
+.menu{
+    overflow: hidden;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #111;
+
+}
+a :hover{
+    color: rgb(255, 247, 0);
+}
+footer{
+    background-color: aqua;
+    
+}
